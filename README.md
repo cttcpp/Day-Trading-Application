@@ -1,6 +1,6 @@
 # RealTimeNeuralNetworkTrading
 
-   ### Why this project was created:
+### Why this project was created:
 
          This project was made as a final project for Udacity.com for there Machine Learning 
          Engineer program. This project uses a variety of techniques to create many well 
@@ -13,7 +13,7 @@
          could theoretically predict for any amount of companies you wanted. This setup is 
          more based for those who don't have the money to buy lots of data though. 
          
-   ### How this package operates:
+### How this package operates:
          
          The way this package works is first, you create your indicator data using some 
          precalculated dataframes containing high/low/close/typical values for the past 
@@ -52,7 +52,7 @@
          you the option to train on the data in real-time so you could get more accurate 
          predictions. 
          
-   ### For more information or questions/concerns:
+### For more information or questions/concerns:
          Contact me at jbboltz123@gmail.com
 		 
 ----------------------------------------------------------------------------
@@ -176,7 +176,7 @@
          done.
             
 ### Note:
-   #### If no dividends/splits since last update:
+#### If no dividends/splits since last update:
          If for any reason, you miss some trading day's data by not using the 
          RealTimeCalculator.ipynb file, you can update everything back to normal by
          opening:
@@ -185,7 +185,7 @@
          This file allows you to retrieve missed intraday data from our intraday 
          data source and update up to present. 
          
-   #### If dividends/splits since last update:   
+#### If dividends/splits since last update:   
          Make sure there have been no dividends or stock splits on any of your stocks 
          since you last updated everything as if this did happen, rather than call the 
          above file, you'll instead open:
