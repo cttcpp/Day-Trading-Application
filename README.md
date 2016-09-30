@@ -1,4 +1,4 @@
-# RealTimeNeuralNetworkTrading
+# RealTimeDayTrading
 
 ### Why this project was created:
 
@@ -63,15 +63,17 @@
          python, and Ipython solution, and several other helpful
          modules such as Numpy, Pandas, and Pip.
       
-      2. Retrieve the 4 python files in this repository and store them
-         in the same directory with all of your other repositories. 
+      2. Retrieve the 3 python files and 2 directories in the 
+	     PythonFiles/ directory from this github repository and 
+		 store them in the directory with all of your other 
+		 python packages. 
         
          For example, with Anaconda, the directory is stored in:
             C:/path/to/user/Anaconda/Lib/site_packages/
         
          RealTimeNN.py, CalcInd.py, and NyseDatesPrds.py are stored as 
-         standalone files, while the googlefinance init.py is stored in 
-         a folder called googlefinance. The googlefinance is a slightly
+         standalone files, while the googlefinance and googlefinance-0.7.dist-info 
+		 directories are stored as directories. The googlefinance is a slightly
          altered version of the googlefinance package written by hongtaocai
             
       3. Install the other modules using pip. For example, cd to the 
@@ -88,8 +90,24 @@
       4. Once all of your modules have been set up, place the other ipynb
          files from this repository into a directory called Trading/ and 
          place these 6 ipython files into this directory.
+		 
+	  5. Retrieve the the Pickles/ directory and store this directory within
+	     the same directory as your other ipython files. This directory contains
+		 4 files. The columnnames.pickle file contains a file that ensures all 
+		 of our different dataframe columns containing our indicators are in
+		 the same order for every dataframe. The final_lst222AAPL.pickle file
+		 contains an example indicator list for predicting Apple stock returns.
+		 It is a list with 222 indicators that are used to train/test our 
+		 neural network. The net222attrs.pickle file contains an example
+		 trained neural network for Apple stock. This file allows you to 
+		 test how this package performs without taking the time to train
+		 yourself. Keep in mind, it might not be completely up to date training
+		 wise but I'll do my best to update it as I continue training. The
+		 newsdict.pickle file contains a dictionary containing url's and dates
+		 for stories about each company we're following dating back from up to 
+		 2 years ago to present.
             
-      5. Retrieve the HLC directory from the repository, within this is
+      6. Retrieve the HLC directory from this repository, within this is
          20 pickled files containing premade dataframes with intraday
          highs, lows, closes, and typical values at a minute by minute
          level. These are provided so you don't have to create them yourself
@@ -105,6 +123,7 @@
          is called http://thebonnotgang.com/tbg/historical-data/
          
          Store this repository within your Trading/ directory.
+ 
                 
 #### Given files, packages, and directory:
         ProgramInfoAndCreation.ipynb
@@ -113,11 +132,23 @@
         DividendAndSplitUpdate.ipynb
         RealTimeCalculator.ipynb
         RealTimeNeuralNetwork.ipynb
-        RealTimeNN.py
-        CalcInd.py
-        NyseDatesPrds.py
-        googlefinance package
-        HLC directory
+		
+		Pickles/
+		  columnnames.pickle
+		  final_lst222AAPL.pickle
+		  net222attrsAAPL.pickle
+		  newsdict.pickle
+		
+		PythonFiles/
+          RealTimeNN.py
+          CalcInd.py
+          NyseDatesPrds.py
+          googlefinance package
+		  googlefinance-0.7.dist-info package
+        
+		HLC directory/
+		  GOOG.pickle
+		  ...
 
 #### Imported packages:
         yahoo_finance package
