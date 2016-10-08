@@ -2,8 +2,7 @@ from sys import stdout
 import pandas as pd
 import numpy as np
 import time
-import scipy.linalg.blas
-import scipy
+import scipy.linalg
 import datetime
 
 def NNOut(inputs, net, P0 = None, Y0 = None):

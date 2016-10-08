@@ -153,17 +153,24 @@ def create_prd_lst2(highlowclose, prd_lst, prd_lst_nums,
     those, there are 3 extra, 2 at the beginning, 6 and 8, and one at the end, 350.
     """
     prd_dict  = {}
+    # For each stock
     for name in highlowclose.keys():
+        # Get the closing prices series to use for calculating lengths
         close = highlowclose[name]['Closes']
-        
+
         len_p, all_l = [], []
+        # For each in the period list dictionary, use that date to calculate the 
+        # length in stock minutes from that date to present, appending each to a
+        # list, and then add that to each of the 3 different stock minute lists
         for each in prd_lst[name]:
             len_p.append(len(close[each:]))
-            
+
         lst1 = prd_lst_nums  + len_p
         lst2 = prd_lst_nums2 + len_p
         lst3 = prd_lst_nums3 + len_p
-        
+
+        # Append each of our lists together and store this in our period dictionary
+        # using the stock symbol as the key
         all_l.append(lst1)
         all_l.append(lst2)
         all_l.append(lst3)
